@@ -19,32 +19,36 @@ entries:
       output: pdf
       type: frontmatter
 
-  - title: Overview
+  - title: Finding Hidden Processes (Overview)
     output: web, pdf
     folderitems:
 
-    - title: Get started
+    - title: Rootkit Overview (Get started)
       url: /index.html
       output: web, pdf
       type: homepage
 
-    - title: Introduction
+    - title: by Window Handle (Introduction)
       url: /mydoc_introduction.html
       output: web, pdf
 
-    - title: Supported features
+    - title: by Kernel API (Supported features)
       url: /mydoc_supported_features.html
       output: web, pdf
 
-    - title: About the theme author
+    - title: by System Process Handles (About the theme author)
       url: /mydoc_about.html
       output: web, pdf
 
-    - title: Support
+    - title: Handling with Zero PID (Support)
       url: /mydoc_support.html
       output: web, pdf
 
-  - title: Release Notes
+    - title: Getting Original Process Path
+      url: /mydoc_support.html
+      output: web, pdf
+
+  - title: Kernel Object Manipulation Tool (Release Notes)
     output: web, pdf
     folderitems:
 
