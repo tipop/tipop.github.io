@@ -182,7 +182,7 @@ entries:
     output: web, pdf
     folderitems:
 
-    - title: Get started
+    - title: Finding Hidden Processes (Get started)
       url: /index.html
       output: web, pdf
       type: homepage
