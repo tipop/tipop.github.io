@@ -1,19 +1,26 @@
 ---
-title: "Getting started with the Documentation Theme for Jekyll SSY"
-keywords: sample homepage
-tags: [getting_started]
+title: "Rootkit Overview"
+keywords: Rootkit
+tags: [rootkit_overview]
 sidebar: mydoc_sidebar
 permalink: index.html
-summary: These brief instructions will help you get started quickly with the theme. The other topics in this help provide additional information and detail about working with other aspects of this theme and Jekyll.
+summary: These brief overview indroduces rootkit and ways of rootkit detection.
 ---
 
 {% include note.html content="If you're cloning this theme, you're probably writing documentation of some kind. I have a blog on technical writing here called <a alt='technical writing blog' href='http://idratherbewriting.com'>I'd Rather Be Writing</a>. If you'd like to stay updated with the latest trends, best practices, and other methods for writing documentation, consider <a href='https://tinyletter.com/tomjoht'>subscribing</a>. I also have a site on <a href='http://idratherbewriting.com/learnapidoc'>writing API documentation</a>." %}
 
-## Build the Theme
+## Rootkit이란
 
-Follow these instructions to build the theme.
+Rootkit은 악성코드가 자기 자신을 숨겨 발견되지 않는 프로그램을 말한다.
+숨기는 대상은 자기 자신의 프로세스인 경우가 많으며, 디바이스 드라이버를 숨길 수도 있고, 스레드나 네트워크 port를 숨길 수도 있다.
+보통 커널 레벨에서 자기 자신을 숨기기 때문에 강력하며 anti-virus를 검사를 피할 수도 있다.
+여기에서는 프로세스를 숨기는 rootkit 기법에 대해서 설명한다.
 
-### 1. Download the theme
+### 1. DKOM
+DKOM은 많이 알려진 기법으로서 Direct Kernel Object Manipulation, 즉 EPROCESS 커널 오브젝트 링크를 끊어서 프로세스를 숨기는 방법니다.
+그러나 64-bit Windows에서 커널 오브젝트를 변경하면 PatchGuard가 발동되어 30분 내에 BSOD가 발생한다.
+즉 PatchGuard가 존재하지 않는 32-bit Windows에서만 가능한 기법이기 때문에 전통적인 DKOM은 잘 사용되지 않는다.
+다만 rookit의 기반 기술을 익히기 위해 DKOM 방식의 디바이스 드라이버를 개발해보고 이 방식으로 숨겨진 프로세스를 찾아내는 코드를 개발해 보는 것이 좋다.
 
 First, download or clone the theme from the [Github repo](https://github.com/tomjoht/documentation-theme-jekyll). Most likely you won't be pulling in updates once you start customizing the theme, so downloading the theme (instead of cloning it) probably makes the most sense. In Github, click the **Clone or download** button, and then click **Download ZIP**.
 
