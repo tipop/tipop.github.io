@@ -851,7 +851,7 @@ span.soft {
 
 @media (max-width: 767px) {
     .navbar-inverse .navbar-nav .open .dropdown-menu > li > a {
-        color: #444;
+        color: #c4ecb8;
     }
 }
 
@@ -1011,7 +1011,6 @@ span.label.label-primary {
     background-color: whitesmoke;
     font-weight: bold;
     color: black;
-    margin-left: 7px;
     }
 
 a code {
