@@ -48,7 +48,7 @@ entries:
       url: /mydoc_support.html
       output: web, pdf
 
-  - title: Kernel Object Manipulation Tool (Release Notes)
+  - title: Bypass Patch Guard Detection
     output: web, pdf
     folderitems:
 
