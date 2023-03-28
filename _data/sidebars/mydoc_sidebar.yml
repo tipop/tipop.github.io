@@ -48,7 +48,7 @@ entries:
       url: /mydoc_support.html
       output: web, pdf
 
-  - title: Bypass Patch Guard Detection
+  - title: PatchGuard Protection
     output: web, pdf
     folderitems:
 
